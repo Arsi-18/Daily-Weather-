@@ -1,0 +1,112 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(0, 255, 221); 
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    color: #3333336b;
+  }
+  
+  .weather-info {
+    text-align: center;
+  }
+  
+  .weather-info p {
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .temp-button,
+  .condition-button,
+  .humidity-button,
+  .wind-speed-button {
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+  }
+  
+  .temp-button {
+    background-color: #007bff; 
+  }
+  
+  .condition-button {
+    background-color: #28a745; 
+  }
+  
+  .humidity-button {
+    background-color: #ffc107; 
+  }
+  
+  .wind-speed-button {
+    background-color: #dc3545; 
+  }
+  
+  .temp-button:hover,
+  .condition-button:hover,
+  .humidity-button:hover,
+  .wind-speed-button:hover {
+    opacity: 0.8;
+  }
+  
+  .sun-shape {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: rgb(229, 255, 80); 
+    border-radius: 50%;
+    margin: 20px auto;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    overflow: hidden;
+    animation: rotate 10s linear infinite;
+  }
+  .sun-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  .sunny::before {
+    content: "☀️"; 
+    font-size: 48px;
+  }
+  .cloudy::before {
+    content: "☁️"; /* Cloudy icon */
+    font-size: 48px;
+  }
+  
+  .rainy::before {
+    content: "🌧️"; /* Rainy icon */
+    font-size: 48px;
+  }
+  @keyframes rotate {
+     from {
+        transform: rotate(0deg)
+     }
+     to {
+        transform: rotate(360deg)
+     }
+     }
+     
+  
+     
+
+  
+  
+  
